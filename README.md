@@ -37,10 +37,11 @@ ticket prices
 
 ------------
 
-- knowledge and understanding of git version control
-- knowledge and understanding of laravel framework and php
-- knowledge and understandig of frontend javascript frameworks
-- knowledge and understanding of frontend state management
-- well organized and documented code
+- Knowledge and understanding of git version control
+- Knowledge and understanding of laravel framework and php
+- Knowledge and understandig of frontend javascript frameworks
+- Knowledge and understanding of frontend state management
+- Well organized and documented code
+- General aesthetic and UX
 
 fork the repository [interview task](https://github.com/kagebond/bana-interview-tasks.git "interview task") from github and send a link when you have complete it to kage@bana.vision
