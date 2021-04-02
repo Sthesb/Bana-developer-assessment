@@ -1,0 +1,31 @@
+<form (ngSubmit)="createSchedule()">
+    <div class="row my-2">
+        <div class="form-group col-md-6">
+            <label for="exampleInputEmail1">From: </label>
+            <input type="text" class="form-control" required  placeholder="Location" name ="route_from" [(ngModel)] = "scheduleForm.route_from">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="exampleInputPassword1">To: </label>
+            <input type="text" class="form-control" required placeholder="Location" name ="route_to" [(ngModel)] = "scheduleForm.route_to">
+        </div>
+    </div>
+    <div class="form-group my-2">
+        <label >Date</label>
+        <input type="date" class="form-control" required name ="date" [(ngModel)] = "scheduleForm.date">
+    </div>
+    <div class="form-group my-2">
+        <label >Ticket Price</label>
+        <input type="number" class="form-control" required name ="ticket_price" [(ngModel)] = "scheduleForm.ticket_price">
+    </div>
+    <div class="row my-2">
+        <div class="form-group col-md-6">
+            <label for="exampleInputEmail1">From (time)</label>
+            <input type="time" class="form-control" required name ="time_from" [(ngModel)] = "scheduleForm.time_from">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="exampleInputPassword1">To (time)</label>
+            <input type="time" class="form-control" required name ="time_to" [(ngModel)] = "scheduleForm.time_to">
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary my-2 ">Save</button>
+</form>

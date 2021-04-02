@@ -1,0 +1,36 @@
+<h3 class=" text-center">Train Schedules</h3>
+<hr class="mb-5">
+
+
+<table class="table table-striped">
+    
+    <thead>
+        <tr>
+            <th rowspan="2" class=" border-dark border-bottom">Date</th>
+            <th rowspan="2" class=" border-dark border-bottom">Ticket Price</th>
+            <th colspan="2" scope="colgroup">Destination</th>
+            <th colspan="2" scope="colgroup">Time</th>
+            <th rowspan="2" class=" border-dark border-bottom "><a routerLink="create" class="btn btn-primary btn-block">Add</a></th>
+        </tr>
+        <tr>
+            <th scope="col" >From</th>
+            <th scope="col">To</th>
+            <th scope="col">From</th>
+            <th scope="col">To</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let schedule of schedules" >
+            <td>{{ schedule.date }}</td>
+            <td>{{ schedule.ticket_price }}</td>
+            <td>{{ schedule.route_from }}</td>
+            <td>{{ schedule.route_to }}</td>
+            <td>{{ schedule.time_from }}</td>
+            <td>{{ schedule.time_to }}</td>
+            <td>
+                <a routerLink="edit/{{ schedule.id }}" class="btn btn-warning">Edit</a>
+                <a href="#" class="mx-2 btn btn-danger" (click) = "deleteSchedule(schedule.id)">Delete</a>
+            </td>
+        </tr>
+        
+</table>
